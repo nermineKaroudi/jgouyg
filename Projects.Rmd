@@ -1,5 +1,5 @@
 ---
-title: "Agriculture, Forestry and fishing - Total "
+title: "Agriculture"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -7,7 +7,7 @@ output:
 ---
 <style>                     
 .navbar {
-  background-color:#660033;
+  background-color:#336600;
   border-color:black;
 }
 .navbar-brand {
@@ -47,7 +47,7 @@ i=match(tnMAP$HASC_1,codemap$HASC_1)
 
 tnMAP=cbind.Spatial(tnMAP,codemap[i,])
 
-col=colorRampPalette(c("firebrick4" , "grey"))                                                                         
+col=colorRampPalette(c("green" , "grey"))                                                                         
 e=col(24) 
 tnMAP@data$values=as.numeric(tnMAP@data$values)
 pal=colorNumeric(e,domain = tnMAP@data$values)
