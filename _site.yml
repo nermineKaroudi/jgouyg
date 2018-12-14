@@ -6,6 +6,7 @@ navbar:
     - text: "CV"
       href: CV.html
     - text: "cover letter"
+      href: cover.html
     - text: "Projects"
       href: Projects.html  
    
